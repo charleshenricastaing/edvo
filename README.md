@@ -1,2 +1,2 @@
 # edvo
-Website for association
+Website for an association
