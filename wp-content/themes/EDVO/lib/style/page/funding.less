@@ -1,0 +1,104 @@
+
+
+// Template Name:    	Funding
+
+.funding{
+
+	p{
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-top: solid 1px #ccc;
+		padding: 10px;
+		margin: 0;
+		
+		 &:last-child{
+
+			border-bottom: solid 1px #ccc;
+			justify-content: flex-end;
+
+		 }
+
+		span{
+
+			margin: 0;
+			font-weight: 600;
+
+		}
+	}
+}
+
+
+.partnerContainer{
+
+	margin: 4vh 0;
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+
+	@media @MaxWidth1025{
+
+		flex-flow: row nowrap;
+		overflow-x: scroll;
+
+	}
+
+	li{
+
+		margin: 20px;
+
+		@media @MaxWidth1025{
+
+			margin: 0 20px;
+			
+		}
+
+		a{
+
+			display: flex;
+			margin: 0;
+			overflow: hidden;
+			.fontSize(2.5);
+
+			&:hover{
+
+				text-decoration: none;
+
+			}
+
+		}
+
+		img{
+
+			max-height: 100px;
+			width: auto;
+			margin: auto;
+
+			&:hover{
+
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				-o-filter: grayscale(100%);
+				-ms-filter: grayscale(100%);
+				filter: grayscale(100%);
+				-webkit-transition:  0.2s ease-in-out;
+				-moz-transition:  0.2s ease-in-out;
+				-o-transition:  0.2s ease-in-out;
+				-ms-transition:  0.2s ease-in-out;
+				transition:  0.2s ease-in-out;
+				-webkit-transform: scale(1.2);
+				-moz-transform: scale(1.2);
+				-o-transform: scale(1.2);
+				-ms-transform: scale(1.2);
+				transform: scale(1.2);
+				-webkit-transform-origin: center;
+				-moz-transform-origin: center;
+				-o-transform-origin: center;
+				-ms-transform-origin: center;
+				transform-origin: center;
+				   
+			}
+		}
+	}
+}

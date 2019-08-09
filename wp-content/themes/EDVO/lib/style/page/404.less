@@ -1,0 +1,92 @@
+
+
+// Template Name:    	404
+
+.page404{
+
+	.infoContainer{
+
+		width: 80%;
+
+		h3{
+
+			color: @white;
+			text-align: center;
+		}
+
+		form{
+
+			width: 100%;
+
+			input{
+
+				&.field{
+
+					background-color: transparent;
+					border: solid 3px @white;
+					color: @white;
+					
+				}
+
+				&.btn{
+
+					background-color: transparent;
+					box-shadow: none;
+					border: solid 3px @white;
+					border-left: none;
+
+					&:hover{
+
+						background-color: @white;
+						color: @darkGrey;
+						.basicBoxShadow;
+						.easeInOut;
+
+					}
+
+				}
+
+				@media @MaxWidth767{
+
+					&.field{
+
+						width: 93%;
+
+					}
+
+					&.btn{
+
+						border-left: solid 3px @white;
+
+					}
+				}
+			}
+
+			::-webkit-input-placeholder { /* Chrome */
+
+				color: @white;
+
+			}
+
+			:-ms-input-placeholder { /* IE 10+ */
+
+				color: @white;
+
+			}
+
+			::-moz-placeholder { /* Firefox 19+ */
+				
+				color: @white;
+				opacity: 1;
+
+			}
+			
+			:-moz-placeholder { /* Firefox 4 - 18 */
+
+				color: @white;
+				opacity: 1;
+
+			}
+		}
+	}
+}

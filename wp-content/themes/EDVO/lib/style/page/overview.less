@@ -1,0 +1,76 @@
+
+
+// Template Name:    	Overview
+
+.keyNumberContainer{
+
+    padding: 8vh 5vw;
+
+    h1{
+
+        color: @white;
+        text-align: center;
+        margin-bottom: 5vh;
+
+        @media @MaxWidth769{
+
+            margin-bottom: 2vh;
+
+        }
+    }
+
+    .keyNumberSection{
+
+        flex-flow: row;
+
+        @media @MaxWidth767{
+
+            flex-flow: column;
+
+        }
+
+        .keyNumber{
+
+            flex: 1;
+            align-items: center;
+            margin: 0 4vw;
+
+            @media @MaxWidth767{
+
+                margin: 4vh 0;
+
+            }
+
+        }
+
+        i{
+            
+            margin: 0;
+            .fontSize(2.5);
+            color: @white;
+
+        }
+
+        span{
+
+            color: @white;
+            font-weight: 600;
+            .fontSize(2);
+
+        }
+
+        p{
+
+            text-align: center;
+            color: @white;
+            font-weight: 400;
+            width: 60%;
+
+            @media @MaxWidth767{
+
+                width: 80%;
+
+            }
+        }
+    }
+}

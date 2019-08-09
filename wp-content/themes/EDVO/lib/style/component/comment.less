@@ -1,0 +1,166 @@
+
+
+// Template Name:    	Comment
+
+.comments-list{
+
+	list-style-type: none;
+
+	.comment-author{
+
+		display: flex;
+		align-items: center;
+
+		.author-data{
+
+			margin-left: 10px;
+
+		}
+	}
+
+	img{
+
+		width: auto;
+		border: solid 3px @blue;
+		border-radius: 50%;
+
+	}
+
+	cite{
+
+		font-family: 'roboto';
+		font-weight: 600;
+		font-style: normal;
+		color: @blue;
+
+	}
+
+	span{
+
+		font-style: normal;
+		margin: 0 0 0 5px;
+
+	}
+
+	.comment-meta a:first-child{
+
+		font-style: italic;
+
+	}
+
+	.comment-edit-link{
+
+		font-style: normal;
+
+	}
+	
+	.comment-edit-link:hover{
+
+		color: red;
+		text-decoration: underline;
+		.easeInOut;
+
+	}
+	
+	.comment-body{
+
+		margin-bottom: 4vh;
+
+		p{
+
+			margin: 4vh 2vw;
+			font-family: 'montserrat';
+			color: @blue;
+
+		}
+
+		.bntContainer{
+
+			justify-content: flex-start;
+
+		}
+	}
+
+	.reply a{
+
+		color: @blue;
+		font-family: 'montserrat';
+		cursor: pointer;
+
+	}
+
+	.children{
+
+		li{
+			list-style-type: none;
+			margin-left: 2vw; 
+		}
+
+		.comment-author{
+
+			border-left: solid 3px @green;
+
+		}
+
+		img{
+
+			margin-left: 15px;
+			border: solid 3px @green;
+
+		}
+
+		.comment-body p{
+
+			color: @green;
+
+		}
+
+		cite,
+		.fn{
+
+
+			color: @green;
+		}
+
+		.reply a{
+
+			color: @green;
+			font-family: 'montserrat';
+			cursor: pointer;
+
+		}
+	}
+
+}
+
+.comment-form{
+
+	.form-submit{
+
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		margin: 2vh 0;
+
+		.submit{
+
+			margin: 0;
+			padding: 15px 30px;
+			font-family: 'montserrat';
+			text-transform: uppercase;
+			cursor: pointer;
+			width: auto;
+			font-style: normal;
+			color: @white;
+			.greyBoxShadow;
+
+			@media @MaxWidth769{
+
+				width: 100%;
+				flex: 1;
+
+			}
+		}
+	}
+}

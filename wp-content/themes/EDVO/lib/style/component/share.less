@@ -1,0 +1,153 @@
+
+
+// Template Name:    	Share
+
+.tagContainer{
+
+	width: 100%;
+	margin: 0;
+
+	p{
+
+		display: flex;
+		flex-flow: row wrap;
+
+		a{
+
+			background-color: @blue;
+			padding: 10px 15px;
+			margin: 0 3px 10px;
+			color: @white;
+			
+			&:hover{
+
+				background-color: darken(@blue, 10%);
+				.easeInOut;
+
+			}
+		}
+	}
+}
+
+.shareContainer{
+
+	display: flex;
+	flex-flow: column;
+
+	h1{
+
+		@media @MaxWidth1025{
+
+			display: none;
+
+		}
+	}
+
+	&.isShareFixedBottom{
+
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+
+	}
+
+	.social{
+		
+		justify-content: flex-start;
+		margin: 0;
+
+		a{
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: @white;
+			flex: 1;
+
+			@media @MaxWidth767{
+				
+				width: 100%;
+				margin-bottom: 2vh;
+
+			}
+
+			@media @MaxWidth769{
+
+				flex: 1;
+				padding: 15px 0;
+				.fontSize(0);
+				text-indent: -9999px;
+				margin-bottom: 0;
+
+				i{
+
+					text-indent: initial;
+					margin: 0;
+
+				}
+
+			}
+
+			&.fb{
+
+				background-color: @facebook;
+
+				&:hover{
+
+					background-color: darken(@facebook, 10%);
+					box-shadow: 0px 0px 0px rgba(44, 57, 61, 0.35), inset 0px 0px 0px rgba(36, 48, 51, 0.35);
+					.easeInOut;
+
+				}
+			}
+
+			&.whatsapp{
+
+				background-color: @whatsapp;
+				display: none;
+
+				&:hover{
+
+					background-color: darken(@whatsapp, 10%);
+					box-shadow: 0px 0px 0px rgba(44, 57, 61, 0.35), inset 0px 0px 0px rgba(36, 48, 51, 0.35);
+					.easeInOut;
+
+				}
+
+				@media @MaxWidth1025{
+
+					display: flex;
+
+				}
+			}
+
+			&.messenger{
+
+				background-color: @messenger;
+
+				&:hover{
+
+					background-color: darken(@messenger, 10%);
+					box-shadow: 0px 0px 0px rgba(44, 57, 61, 0.35), inset 0px 0px 0px rgba(36, 48, 51, 0.35);
+					.easeInOut;
+
+				}
+			}
+
+			&.mail{
+
+				background-color: @mail;
+
+				&:hover{
+
+					background-color: darken(@mail, 10%);
+					box-shadow: 0px 0px 0px rgba(44, 57, 61, 0.35), inset 0px 0px 0px rgba(36, 48, 51, 0.35);
+					.easeInOut;
+
+				}
+			}
+		}
+	}
+}

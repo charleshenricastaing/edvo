@@ -1,0 +1,215 @@
+
+
+// Template Name:    	Cookie
+
+
+/* only animate ifhas class 'cc-animate' */
+
+.cc-animate.cc-revoke {
+
+	-webkit-transition: transform 1s ease;
+	-moz-transition: transform 1s ease;
+	-ms-transition: transform 1s ease;
+	-o-transition: transform 1s ease;
+	transition: transform 1s ease;
+
+	&.cc-active.cc-top{
+
+		transform: translateY(0);
+
+	}
+
+	&.cc-top{
+
+		transform: translateY(-2em);
+
+	}
+
+	&:hover{
+
+		transform: translateY(0);
+
+	}
+
+}
+
+.cc-grower{
+
+	/* Initially we don't want any height, and we want the contents to be hidden */
+
+	max-height: 0;
+	overflow: hidden;
+  
+	/* Set our transitions up. */
+
+	-webkit-transition: max-height 1s;
+	-moz-transition: max-height 1s;
+	-ms-transition: max-height 1s;
+	-o-transition: max-height 1s;
+	transition: max-height 1s;
+
+	@media @MaxWidth769{
+
+		max-height: inherit;
+
+	}
+
+	@media @MaxWidth1025{
+
+		max-height: inherit;
+
+	}
+
+	.cc-banner{
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 10px;
+
+		&.cc-window{
+
+			opacity: 1;
+			-webkit-transition: opacity 1s ease;
+			-moz-transition: opacity 1s ease;
+			-ms-transition: opacity 1s ease;
+			-o-transition: opacity 1s ease;
+			transition: opacity 1s ease;
+
+			&.cc-invisible{
+
+				opacity: 0;
+
+			}
+		}
+
+		.cc-message{
+
+			display: flex;
+			flex-flow: column;
+			align-items: flex-start;
+			margin: 0;
+			color: @white;
+
+			a{
+
+				margin: 0;
+				font-weight: 600;
+
+			}
+
+		}
+
+		.cc-compliance{
+
+			a{
+
+				margin: 0;
+				padding: 15px 30px;
+				font-family: 'montserrat';
+				text-transform: uppercase;
+				font-style: normal;
+				text-decoration: none;
+				width: auto;
+				white-space: nowrap;
+				cursor: pointer;
+				margin: 0;
+				.greyBoxShadow;
+				
+			}
+		}
+	}
+
+	.cc-window,
+	.cc-floating{
+
+		@media @MaxWidth769{
+
+			flex-flow: column;
+
+		}
+
+		@media @MaxWidth1025{
+
+			padding: 10px;
+			display: flex;
+			align-items: center;
+	
+		}
+	}
+
+	.cc-message{
+
+		@media @MaxWidth769{
+
+			margin: 0;
+			text-align: center;
+
+		}
+
+		@media @MaxWidth1025{
+
+			display: inline-block;
+			margin: 0 10px 0 0;
+			color: @white;
+	
+		}
+
+		a{
+
+			@media @MaxWidth1025{
+
+				font-weight: 600;
+		
+			}
+		}
+	}
+
+	.cc-compliance{
+
+		@media @MaxWidth769{
+
+			display: flex;
+			flex: 1;
+			width: 100%;
+			margin: 15px 0;
+
+		}
+
+		a{
+
+			@media @MaxWidth769{
+
+				flex: 1;
+				text-align: center;
+				margin: 0;
+				padding: 15px 30px;
+				font-family: 'montserrat';
+				text-transform: uppercase;
+				font-style: normal;
+				text-decoration: none;
+				width: auto;
+				cursor: pointer;
+				margin: 0;
+				.greyBoxShadow;
+
+			}
+
+			@media @MaxWidth1025{
+
+				margin: 0;
+				padding: 15px 30px;
+				font-family: 'montserrat';
+				text-transform: uppercase;
+				font-style: normal;
+				text-decoration: none;
+				width: auto;
+				cursor: pointer;
+				white-space: nowrap;
+				margin: 0;
+				.greyBoxShadow;
+		
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+
+
+// Template Name:    	School
+
+.formateur{
+	
+	.column{
+
+		flex: 1;
+		border-left: solid 5px @green;
+		padding-left: 10px;
+
+		@media @MaxWidth769{
+
+			margin-bottom: 30px;
+
+		}
+	}
+
+	// .column last-child();
+
+	div div:last-child{
+
+		@media @MaxWidth769{
+
+			margin-bottom: 0;
+			
+		}
+	}
+
+	.row{
+
+		@media @MaxWidth769{
+
+			flex-flow: column;
+			
+		}
+	}
+}

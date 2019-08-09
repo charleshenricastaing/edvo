@@ -1,0 +1,188 @@
+
+
+// Template Name:    	Post
+
+.postContainer{
+
+	.postInfoContainer{
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media @MaxWidth769{
+
+			flex-flow: column;
+			margin-bottom: 4vh;
+
+		}
+
+		.date{
+
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+
+			@media @MaxWidth769{
+
+				margin-bottom: 4vh;
+				width: 100%;
+
+			}
+
+			span{
+
+				&:first-child{
+
+					font-family: 'bebas-neue';
+					text-transform: uppercase;
+					margin-bottom: 0;
+
+				}
+
+				&:last-child{
+
+					display: flex;
+					align-items: center;
+					margin: 0;
+					font-style: normal;
+					font-weight: 400;
+					color: @darkGrey;
+					margin-left: 5px;
+					margin-bottom: 3px;
+
+					i{
+
+						margin: 0;
+						margin-right: 5px;
+						margin-left: 5px;
+		
+					}
+				}
+			}
+		}
+
+		.btnContainer{
+
+			margin: 0;
+
+			@media @MaxWidth769{
+
+				justify-content: space-between;
+				width: 100%;
+				
+			}
+
+			span{
+
+				display: flex;
+				margin: 0;
+				align-items: center;
+				font-family: 'bebas-neue';
+				text-transform: uppercase;
+				padding: 15px 0px 10px;
+
+				i{
+
+					margin-right: 5px;
+
+				}
+
+			}
+
+			a{
+
+				padding: 15px;
+				font-size: 20px;
+				margin: 0 5px;
+
+				&.fb{
+
+					.facebookBoxShadow;
+					margin-left: 10px;
+
+				}
+
+				&.whatsapp{
+
+					.whatsappBoxShadow;
+					display: none;
+
+					@media @MaxWidth769{
+
+						display: flex;
+						
+					}
+
+					@media @MaxWidth1025{
+
+						display: flex;
+						
+					}
+
+				}
+
+				&.messenger{
+
+					.messengerBoxShadow;
+
+				}
+
+				&.mail{
+
+					.mailBoxShadow;
+
+				}
+
+				i{
+
+					margin: 0;
+					color: @white;
+
+				}
+
+			}
+		}
+	}
+
+	.insidePost{
+
+		font-family: 'roboto';
+		font-weight: 300;
+		.fontSize(1.125);
+		margin: 8vh auto 0;
+
+	}
+
+	section{
+
+		margin-bottom: 0;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6{
+
+			font-family: 'montserrat';
+			color: inherit;
+
+		}
+
+		p,
+		span,
+		strong,
+		em,
+		ul,
+		ol,
+		li,
+		blockquote,
+		a{
+
+			font-family: 'roboto';
+			color: inherit;
+
+		}
+	}
+}

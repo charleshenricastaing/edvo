@@ -1,0 +1,87 @@
+
+
+// Template Name:    	Index
+
+.home{
+	h1{
+		background-color: transparent;
+	}
+	
+	h1 span{
+		font-family: "montserrat", helvetica, sans-serif;
+		font-weight: 400;
+		color: white;
+		margin-top: 1vh;
+		margin-bottom: 2vh;
+		background-color: rgba(0, 150, 73, 0.8);
+		.fontSize(2);
+	}
+	
+	ul li{
+		
+		text-decoration: none;
+		list-style-type: none;
+	
+		&::before{
+			content: "\70";
+			font-family: 'edvo-ui-kit';
+			font-size: 12px;
+			margin-right: 5px;
+		}
+	
+		&:hover{
+			transform: translateX(10px);
+			text-decoration: none;
+			.easeInOut;
+		}
+	}
+	
+	
+	h2 > a{
+		font-family: "montserrat", helvetica, sans-serif;
+		font-weight: 400;
+		color: @darkGrey;
+		margin-top: 1vh;
+		margin-bottom: 2vh;
+		.fontSize(1.5);
+	
+		@media @MaxWidth769{
+	
+			.fontSize(1.25);
+	
+		}
+	}
+	
+	.third.card{
+		background-color: #FAFAFA;
+		border-radius: 8px;
+		overflow: hidden;
+		margin-bottom: 2vh;
+	
+		&:hover{
+			box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.16);
+			-moz-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.16);
+			-webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.16);
+			-o-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.16);
+			.easeInOut;
+	
+			img{
+				transform: scale(1.1);
+				.easeInOut;
+			}
+		}
+	
+		li a{
+			.fontSize(1);
+		}
+	
+		h2{
+			margin-left: 1vw;
+		}
+	
+		figure{
+			overflow: hidden;
+		}
+	
+	}
+}

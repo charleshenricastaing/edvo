@@ -1,0 +1,42 @@
+
+
+// Template Name:    	Gallery
+
+div.gallery{
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	overflow: hidden;
+	margin: 2vh 0 !important;
+
+	.gallery-item{
+		
+		max-height: 30vh;
+		height: 30vh;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		background-color: @black;
+		margin-top: 0;
+
+		@media @MaxWidth769{
+
+			width: 50% !important;
+
+		}
+
+		@media @MaxWidth767{
+
+			width: 100% !important;
+		}
+
+		img{
+
+			border: none !important;
+
+		}
+
+	}
+}

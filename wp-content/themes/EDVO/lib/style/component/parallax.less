@@ -1,0 +1,165 @@
+
+
+// Template Name:    	Parallax
+
+.parallaxImg{
+
+	width: 100%;
+	position: relative;
+
+	.parallaxOverlay{
+
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		background-color: rgba(50, 65, 71, 0.5);
+
+		h1{
+
+			color: @white;
+			text-align: center;
+
+			@media @MaxWidth769{
+
+				flex-flow: column;
+				text-align: center;
+
+			}
+
+		}
+
+		.btnContainer{
+
+			margin: 5vh 0;
+
+			a{
+
+				animation: btnPulse 5s infinite;
+				-webkit-animation: btnPulse 5s infinite;
+				-moz-animation: btnPulse 5s infinite;
+				-o-animation: btnPulse 5s infinite;
+				-ms-animation: btnPulse 5s infinite;
+
+				animation-delay: 3s;
+				-webkit-animation-delay: 3s;
+				-moz-animation-delay: 3s;
+				-o-animation-delay: 3s;
+				-ms-animation-delay: 3s;
+
+				@media @MaxWidth769{
+
+					width: auto;
+					flex: none;
+					
+				}
+			}
+		}
+
+		.isShownDrugNumber{
+
+			h3{
+
+				color: @white;
+				margin-bottom: 0;
+				text-align: center;
+
+				@media @MaxWidth769{
+
+					margin: 0 10px;
+
+				}
+
+			}
+
+			span{
+
+				font-family: 'montserrat';
+				color: #fff;
+				font-size: 19px;
+				font-weight: 600;
+				margin-bottom: 0;
+
+			}
+
+		}
+
+		.isHiddenDrugNumber{
+
+			display: none;
+
+		}
+
+		.contributionContainer{
+
+			display: flex;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			background-color: @blue;
+
+			ul{
+
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				flex: 1;
+				margin: 0;
+
+				li{
+
+					margin: 0;
+					list-style-type: none;
+					flex: 1;
+
+					a{
+
+						display: flex;
+						flex-flow: column;
+						justify-content: center;
+						align-items: center;
+						text-transform: uppercase;
+						font-family: 'roboto';
+						font-weight: 500;
+						color: #fff;
+						margin: 0;
+						padding: 10px 0;
+
+						span{
+
+							color: @white;
+							margin: 0;
+							font-weight: 200;
+
+						}
+
+						@media @MaxWidth769{
+
+							.fontSize(0.75);
+
+							span{
+
+								.fontSize(0.75);
+
+							}
+						}
+					}
+				}
+			}
+
+			&.isFixedBottom{
+
+				position: fixed;
+				z-index: 1;
+
+			}
+		}
+	}
+}

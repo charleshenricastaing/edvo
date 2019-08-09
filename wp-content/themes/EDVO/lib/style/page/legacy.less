@@ -1,0 +1,98 @@
+
+
+// Template Name:    	Legacy
+
+.legacy{
+
+	.summary{
+
+		ol{
+
+			margin-left: 15px;
+			margin-bottom: 3vh;
+
+			p{
+
+				// Disable <p> Auto Formating
+				display: none;
+
+			}
+
+			li{
+
+
+				p{
+
+					// Disable <p> Auto Formating
+					display: none;
+	
+				}
+
+				ol{
+					margin: 1vh 0 1vh 15px;
+				}
+
+				a{
+
+					text-decoration: underline;
+					color: @blue;
+
+					&:hover{
+
+						color: darken(@blue, 10%);
+						.easeInOut;
+
+					}
+
+				}
+
+			}
+		}
+	}
+
+	h2{
+
+		margin-bottom: 3vh;
+
+	}
+
+	h3{
+
+		margin-bottom: 2vh;
+
+	}
+
+	a{
+
+		color: @blue;
+		
+		&:hover{
+
+			color: darken(@blue, 10%);
+			text-decoration: underline;
+			.easeInOut;
+
+		}
+	}
+
+	@media @MaxWidth767{
+
+		.card{
+
+			ul{
+
+				margin-left: 10px;
+
+			}
+
+			&.last{
+
+				ul{
+
+					margin-left: 20px;
+					
+				}
+			}
+		}
+	}
+}
