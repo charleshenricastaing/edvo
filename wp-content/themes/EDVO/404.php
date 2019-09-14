@@ -25,7 +25,7 @@
 					background-color: #fff;">
 					<div class="parallaxOverlay">
 						<div class="infoContainer">
-							<h1><?php _e("PUG LIFE !!! Cette page n'existe pas..."); ?></h1>
+							<h1><?php _e("Huum, il semble que cette page n'existe pas..."); ?></h1>
 							<h3><?php _e("Faites une autre recherche..."); ?></h3>
 							<div class="searchForm"><?php get_search_form(); ?></div>
 						</div>

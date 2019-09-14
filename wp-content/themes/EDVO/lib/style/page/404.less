@@ -8,10 +8,22 @@
 
 		width: 80%;
 
+		h1{
+			width: 80%;
+
+			@media @MaxWidth767{
+				text-align: left;
+			}
+		}
+
 		h3{
 
 			color: @white;
-			text-align: center;
+			margin: 6vh 0;
+
+			@media @MaxWidth767{
+				text-align: left;
+			}
 		}
 
 		form{
@@ -24,6 +36,7 @@
 
 					background-color: transparent;
 					border: solid 3px @white;
+					border-radius: 50px 0 0 50px;
 					color: @white;
 					
 				}
@@ -34,6 +47,7 @@
 					box-shadow: none;
 					border: solid 3px @white;
 					border-left: none;
+					border-radius: 0 50px 50px 0;
 
 					&:hover{
 
@@ -50,13 +64,15 @@
 
 					&.field{
 
-						width: 93%;
+						width: 94%;
+						border-radius: 50px;
 
 					}
 
 					&.btn{
 
 						border-left: solid 3px @white;
+						border-radius: 50px;
 
 					}
 				}

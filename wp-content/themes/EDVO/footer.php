@@ -36,7 +36,7 @@
 					<a href="mailto:secretariat@edvo.com?subject=Demande d'informations"><i class="edvo-mail"></i></a>
 				</div>
 			</div>
-			<!-- <nav class="menu">
+			<nav class="menu">
 				<?php
 					wp_nav_menu( array(
 					'theme_location' => 'footerNav',
@@ -48,7 +48,7 @@
 					'walker' => new wp_bootstrap_navwalker())
 					);
 				?>
-			</nav>/.navbar-collapse -->
+			</nav>
 		</div>
 	</div>
 

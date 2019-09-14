@@ -15,7 +15,7 @@
 		<header class="parallaxImg">
 			<div class="parallaxOverlay">
 				<div class="infoContainer">
-					<h1><span>EDVO accompagne des personnes souffrant d'addictions pour les aider à reconstruire leur vie</span></h1>
+					<h1>EDVO accompagne des personnes souffrant d'addictions pour les aider à reconstruire leur vie</h1>
 				</div>
 			</div>
 

@@ -20,15 +20,58 @@
 		flex-flow: column;
 		background-color: rgba(50, 65, 71, 0.5);
 
+		&::after{
+			content:"";
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			display: block;
+			border: solid 30px transparent;
+			border-right-color: white;
+			border-right-width: 100vw;
+			border-bottom-color: white;
+			border-bottom-width: 0;	
+			
+			@media @MaxWidth769{
+				bottom: -1px;
+				border: solid 32px transparent;
+				border-right-color: white;
+				border-right-width: 100vw;
+				border-bottom-color: white;
+				border-bottom-width: 0;
+			}
+			
+		}
+
+		.infoContainer{
+			width: 95%;
+
+			@media @MaxWidth1025{
+				width: 90%;
+				margin: auto;
+			}
+		}
+
 		h1{
 
 			color: @white;
-			text-align: center;
+			text-align: left;
+			width: 50%;
+			.fontSize(4);
+			font-weight: 600;
+			text-shadow: 2px 2px 2px @darkGrey;
+
+			@media @MaxWidth1025{
+				text-align: center;
+				width: 100%;
+			}
+			
 
 			@media @MaxWidth769{
 
 				flex-flow: column;
 				text-align: center;
+				.fontSize(2);
 
 			}
 

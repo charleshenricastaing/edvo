@@ -4,8 +4,8 @@
 
 		<div class="parallaxContainer">
 			<div class="parallaxImg" style="
-				background: url('https://edvo.fr/wp-content/uploads/2018/07/IMG_0188.jpg') fixed; 
-				height:80vh; 
+				background: url('/edvo/wp-content/uploads/2019/09/EDVO-actualites.jpg') fixed; 
+				height:75vh; 
 				background-repeat: no-repeat; 
 				background-origin: content-box; 
 				-webkit-background-origin: content-box; 

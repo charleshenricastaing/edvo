@@ -412,6 +412,15 @@ em{
 	}
 }
 
+blockquote{
+	font-style: italic;
+	border-left: solid 5px @green;
+
+	em{
+		.fontSize(2);
+	}
+}
+
 a{
 
 	&.noUnderline{
@@ -499,6 +508,11 @@ textarea, input, select{
 	display: flex;
 	margin: 8vh auto;
 	width: 90%;
+
+	iframe{
+		border-radius: 5px;
+		.greenBoxShadow;
+	}
 
 	@media @MaxWidth769{
 

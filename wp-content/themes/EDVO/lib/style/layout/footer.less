@@ -8,8 +8,30 @@
 	flex-flow: row nowrap;
 	align-items: center;
 	position: relative;
-	border-top: solid 5px @blue;;
 	background-color: @blue;
+
+	&::before{
+		content:"";
+		position: absolute;
+		left: -34px;
+		top: 0px;
+		display: block;
+		border: solid 30px transparent;
+		border-left-color: white;
+		border-left-width: 100vw;
+		border-top-color: white;
+		border-top-width: 0;	
+
+		@media @MaxWidth1025{
+			top: -2px;
+			border: solid 32px transparent;
+			border-left-color: white;
+			border-left-width: 100vw;
+			border-top-color: white;
+			border-top-width: 0;
+		}
+
+	}
 
 	// Expected Rule For iPhone X and OnePlus 6
 
@@ -214,6 +236,18 @@
 					align-items: flex-start;
 					position: relative;
 
+					&:hover{
+						transform: inherit;
+					}
+
+					&::before{
+						display: none;
+					}
+
+					&:last-child a{
+						cursor: pointer;
+					}
+
 					@media @MaxWidth769{
 
 						width: 100%;
@@ -224,7 +258,8 @@
 
 					// Second Navigation Level - Depth 2 (ul)
 
-					.dropdown-menu{
+					.dropdown-menu,
+					.sub-menu{
 						display: flex;
 						flex-flow: column;
 						justify-content: flex-start;
@@ -244,6 +279,10 @@
 							text-transform: inherit;
 							border-bottom: none;
 
+							img{
+								display: none;
+							}
+
 							&:hover{
 
 								text-decoration: none;
@@ -259,7 +298,7 @@
 			a{
 
 				font-family: "montserrat";
-				font-size: 18px;
+				font-size: 16px;
 				color: @white;
 				cursor: initial;
 				display: flex;

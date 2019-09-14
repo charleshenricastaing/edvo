@@ -36,7 +36,8 @@ button {
 	
 }
 
-.btn{
+.btn,
+.wp-block-button__link{
 	
 	margin: 0;
 	font-size: 14px;
@@ -62,9 +63,19 @@ button {
 	}
 }
 
+.wp-block-button__link{
+	border-radius: 30px !important;
+	background-color: @green !important;
+
+	&:hover{
+		background-color: darken(@green, 10%) !important;
+	}
+}
+
 // Flat Button
 
-.greenFlatBtn{
+.greenFlatBtn,
+.wp-block-button__link{
 
 	color: @white;
 	background-color: @green;
@@ -72,13 +83,13 @@ button {
 	&:hover{
 		cursor: pointer;
 		background-color: darken(@green, 10%);
+		color: @white;
 		.easeInOut;
 	}
 
 	@media @MaxWidth769{
 
-		flex: 1;
-		width: 100%;
+		width: auto;
 		
 	}
 }
@@ -89,8 +100,7 @@ button {
 
 	@media @MaxWidth769{
 
-		flex: 1;
-		width: 100%;
+		width: auto;
 		
 	}
 	
@@ -102,8 +112,7 @@ button {
 
 	@media @MaxWidth769{
 
-		flex: 1;
-		width: 100%;
+		width: auto;
 		
 	}
 
@@ -115,8 +124,7 @@ button {
 
 	@media @MaxWidth769{
 
-		flex: 1;
-		width: 100%;
+		width: auto;
 		
 	}
 	
@@ -142,8 +150,7 @@ button {
 
 	@media @MaxWidth769{
 
-		flex: 1;
-		width: 100%;
+		width: auto;
 		
 	}
 }
@@ -166,8 +173,7 @@ button {
 
 	@media @MaxWidth769{
 
-		flex: 1;
-		width: 100%;
+		width: auto;
 		
 	}
 }
@@ -190,8 +196,7 @@ button {
 
 	@media @MaxWidth769{
 
-		flex: 1;
-		width: 100%;
+		width: auto;
 		
 	}
 }
@@ -214,8 +219,7 @@ button {
 
 	@media @MaxWidth769{
 
-		flex: 1;
-		width: 100%;
+		width: auto;
 
 	}
 }

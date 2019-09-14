@@ -64,19 +64,6 @@
 					</a>
 				</div>
 				<div><strong>Addiction - prévention - accompagnement - précarité</strong></div>
-				<!-- <div class="menu">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'subheaderNav',
-							'depth' => 2,
-							'container' => false,
-							'menu_class' => 'subheader-nav',
-							'fallback_cb' => 'wp_page_menu',
-							//Process nav menu using our custom nav walker
-							'walker' => new wp_bootstrap_navwalker())
-						);
-					?>
-				</div> -->
 			</div>
 		</nav>
 		<div class="header">
@@ -96,11 +83,6 @@
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="navbarCollapse">
-					<!-- <div class="logo">
-						<a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?>
-							<img src="<?php echo( get_bloginfo('template_directory').'/lib/img/logo-edvo.svg' ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-						</a>
-					</div> -->
 					<div class="menu" id="menuOnClick">
 						<?php
 							wp_nav_menu( array(

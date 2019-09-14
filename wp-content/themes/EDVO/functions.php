@@ -47,7 +47,7 @@ function use_parallax() {
 	?>
 		<div class="parallaxContainer" id="section_<?php echo the_ID(); ?>" style="
 		background: url('<?php echo $parallaxImage[0]; ?>') fixed; 
-		height:80vh; 
+		height:75vh; 
 		background-repeat: no-repeat; 
 		background-origin: content-box; 
 		-webkit-background-origin: content-box; 

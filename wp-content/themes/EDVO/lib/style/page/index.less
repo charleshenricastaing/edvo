@@ -7,14 +7,27 @@
 		background-color: transparent;
 	}
 	
-	h1 span{
-		font-family: "montserrat", helvetica, sans-serif;
-		font-weight: 400;
-		color: white;
-		margin-top: 1vh;
-		margin-bottom: 2vh;
-		background-color: rgba(0, 150, 73, 0.8);
-		.fontSize(2);
+	.infoContainer{
+		width: 80%;
+
+		@media @MaxWidth1025{
+			width: 90%;
+			margin: auto;
+		}
+
+		h1{
+			.fontSize(3);
+			width: 70%;
+
+			@media @MaxWidth1025{
+				text-align: center;
+				width: 100%;
+			}
+
+			@media @MaxWidth769{
+				.fontSize(2);
+			}
+		}
 	}
 	
 	ul li{
@@ -52,7 +65,8 @@
 		}
 	}
 	
-	.third.card{
+	.third.card,
+	.quarter.card{
 		background-color: #FAFAFA;
 		border-radius: 8px;
 		overflow: hidden;
